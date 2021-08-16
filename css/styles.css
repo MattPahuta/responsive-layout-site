@@ -1,0 +1,46 @@
+/* Reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Base Styles */
+body {
+  margin: 0;
+  font-family: 'Lato', Verdana, sans-serif;
+  font-size: 1.3rem;
+  color: #1d1d1d;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1 {
+  /* margin-top: 0; */
+  font-size: 3rem;
+}
+
+.container {
+  width: 85%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+
+/* Sills and icon styles */
+.icon-container {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-content: space-between;
+}
+
+.icon {
+  width: 30%;
+}
+
+
+/* Footer styles */
+.footer {
+  display: flex;
+}
