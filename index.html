@@ -13,11 +13,11 @@
 <body>
   <!-- Header seaction -->
   <header id="top">
-    <div class="container">
+    <div class="container main-header">
       <h1 class="title">Matt Pahuta</h1>
       <!-- Page navigation -->
       <nav class="main-nav">
-        <ul class="nav-list">
+        <ul class="main-nav-list">
           <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
           <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
           <li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
@@ -25,13 +25,21 @@
         </ul>
       </nav>
     </div>
-    <div class="container">
+
+    <!-- <div class="container">
       <img class="profile-image" src="imgs/responsive-layout-profile.png" alt="Matt Pahuta">
       <p class="profile-bio">Hi! I'm a front-end developer who loves responsive design and css. I recently finished a degree in front-end web development at Treehouse and am excited to put all my skills to use!</p>
-    </div>
+    </div> -->
   </header>
 
   <main class="main">
+    <section class="profile">
+      <div class="container profile-container">
+        <img class="profile-image" src="imgs/responsive-layout-profile.png" alt="Matt Pahuta">
+        <p class="profile-bio">Hi! I'm a front-end developer who loves responsive design and css. I recently finished a degree in front-end web development at Treehouse and am excited to put all my skills to use!</p>
+      </div>
+    </section>
+
 
       <!-- Skills section -->
       <!-- <section id="skills" class="skills">
@@ -42,11 +50,13 @@
           <img class="icon" src="imgs/icons8-javascript.svg" alt="">
         </div>
       </section> -->
+
       <!-- Portfolio section -->
       <section id="portfolio" class="portfolio">
+
         <h2 class="section-title">Portfolio</h2>
         
-        <div class="container split">
+        <div class="container portfolio-container">
           <div class="card">
             <img src="imgs/portfolio-1.png" alt="Marketing website" class="portfolio-img">
             <div class="portfolio-text">
@@ -95,7 +105,7 @@
     <!-- Contact section -->
     <section id="contact" class="contact">
       <h2 class="section-title">Contact</h2>
-      <div class="container split">
+      <div class="container">
         <p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
         <p><span class="contact-label">Phone</span><strong>+1 (111) 555-1234</strong></p>
         <p><span class="contact-label">Email</span><strong>email@yoursite.com</strong></p>
