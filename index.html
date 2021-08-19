@@ -34,10 +34,21 @@
 
   <main class="main">
     <section class="profile">
-      <div class="container profile-container">
+      <!-- <div class="container profile-container">
         <img class="profile-image" src="imgs/responsive-layout-profile.png" alt="Matt Pahuta">
         <p class="profile-bio">Hi! I'm a front-end developer who loves responsive design and css. I recently finished a degree in front-end web development at Treehouse and am excited to put all my skills to use!</p>
+      </div> -->
+
+
+      <div class="container profile-container">
+        <div class="profile-img-card">
+          <img class="profile-image" src="imgs/responsive-layout-profile.png" alt="Matt Pahuta">
+        </div>
+        <div class="profile-bio-card">
+          <p class="profile-bio">Hi! I'm a front-end developer who loves responsive design and css. I recently finished a degree in front-end web development at Treehouse and am excited to put all my skills to use!</p>
+        </div>
       </div>
+
     </section>
 
 
@@ -106,23 +117,25 @@
     <section id="contact" class="contact">
       <h2 class="section-title">Contact</h2>
       <div class="container">
-        <p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
-        <p><span class="contact-label">Phone</span><strong>+1 (111) 555-1234</strong></p>
-        <p><span class="contact-label">Email</span><strong>email@yoursite.com</strong></p>
+        <div class="contact-details">
+          <p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
+          <p><span class="contact-label">Phone</span><strong>+1 (111) 555-1234</strong></p>
+          <p><span class="contact-label">Email</span><strong>email@yoursite.com</strong></p>
+        </div>
       </div>
     </section>
 
   </main>
 <!-- Footer section -->
   <footer class="footer">
-    <div class="footer-container">
+    <div class="container footer-container">
       <h3>Matt Pahuta</h3>
       <ul class="footer-nav">
-        <li class="top"><a href="#top" class="nav-link">Back to top</a></li>
-        <li class="full"><a href="#top" class="nav-link">Home</a></li>
-        <li class="full"><a href="#skills" class="nav-link">Skills</a></li>
-        <li class="full"><a href="#portfolio" class="nav-link">Portfolio</a></li>
-        <li class="full"><a href="#contact" class="nav-link">Contact</a></li>
+        <li class="to-top"><a href="#top" class="nav-link">Back to top</a></li>
+        <li class="full-nav"><a href="#top" class="nav-link">Home</a></li>
+        <li class="full-nav"><a href="#skills" class="nav-link">Skills</a></li>
+        <li class="full-nav"><a href="#portfolio" class="nav-link">Portfolio</a></li>
+        <li class="full-nav"><a href="#contact" class="nav-link">Contact</a></li>
       </ul>
     </div>
   </footer>
