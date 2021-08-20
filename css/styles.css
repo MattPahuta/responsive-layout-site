@@ -198,16 +198,64 @@ p {
 
 
 /* Skills and icon styles */
-/* .icon-container {
-  background-color: black;
-  display: flex;
+.skill-grid {
+  /* display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-content: space-between;
+  align-content: center; */
 }
 
-.icon {
-  width: 30%;
-} */
+.skill-card {
+  /* width: 90%; */
+  margin: 0 auto;
+  max-width: 600px;
+  background-color: #111d4a;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.skill-card-img {
+  object-fit: contain;
+  /* height: 200px; */
+  flex-basis: 165px;
+  background-color: green;
+
+}
+
+.skill-card-content {
+  padding: 1em;
+}
+
+.skill-card-title {
+  font-size: 1.15rem;
+  font-family: 'Montserrat', Verdana, sans-serif;
+  color: green;
+  margin-bottom: 0.7em;
+}
+
+.skill-card-body {
+  font-size: .85rem;
+}
+
+@media (min-width: 525px) {
+  .skill-card {
+    flex-direction: row;
+  }
+  .skill-card-img {
+    height: 185px;
+  }
+  .skill-card-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .skill-card-title {
+    font-size: 1.75rem;
+  }
+  .skill-card-body {
+    font-size: 1rem;
+  }
+}
 
 
 /* Portfolio section and cards styles */
@@ -215,9 +263,9 @@ p {
   /* margin: 0 auto; */
 }
 
-.portfolio-container {
+/* .portfolio-container {
   background-color: #fff;
-}
+} */
 
 .portfolio-text {
   padding: 1.5em 1em;
@@ -228,6 +276,13 @@ p {
 }
 
 @media (min-width: 768px) {
+  .skill-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1em;
+  }
+
 
   .portfolio-grid {
     display: flex;
@@ -241,6 +296,10 @@ p {
 }
 
 @media (min-width: 1024px) {
+  .skills-container,
+  .portfolio-container {
+    background-color: #fff;
+  }
 
   .card {
     width: 32%;
